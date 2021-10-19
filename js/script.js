@@ -3,7 +3,6 @@ const slides = document.querySelectorAll(".slide"),
     arrowLeft = document.querySelector(".fa-caret-left"),
     arrowRight = document.querySelector(".fa-caret-right"),
     slideImages = document.querySelectorAll(".slide-image");
-let counter = 0;
 
 times.addEventListener("click", function () {
     for (const slide of slides) {
@@ -49,6 +48,7 @@ arrowRight.addEventListener("click", function () {
     }
 
 });
+
 
 arrowLeft.addEventListener("click", function () {
 

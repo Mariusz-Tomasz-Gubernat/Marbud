@@ -1,0 +1,94 @@
+@media (max-width:1075px) {
+    header {
+
+        .large-dev {
+            display: none;
+        }
+
+        .small-dev {
+            display: block;
+        }
+
+        .header-content {
+            width: 100%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+            .company-slogan {
+                padding-left: 0;
+                font-size: 60px;
+            }
+
+            .company-name {
+                font-size: 150px;
+                position: relative;
+            }
+
+            .company-name::before {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                width: 20%;
+                height: 10px;
+                border-radius: 30px;
+                transform: translate(-50%, -50%);
+                content: "";
+                display: block;
+                background-color: rgb(218, 165, 32);
+            }
+        }
+    }
+
+    .about-us {
+
+        .column {
+            width: 80%;
+        }
+    }
+
+    .our-offer {
+        .row {
+            width: 90%;
+
+            img {
+                width: 50%;
+            }
+
+            img:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .our-workers {
+        .column-container {
+            width: 90%;
+
+            .column {
+                width: 30%;
+                margin: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width:775px) {
+    .our-offer {
+        border-top: none;
+
+        img {
+            width: 80%;
+        }
+
+        .row {
+
+            .text-container {
+                width: 80%;
+
+                .about-us-column-title {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
