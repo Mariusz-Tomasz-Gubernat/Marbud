@@ -1,0 +1,29 @@
+header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+
+    .header-image {
+        position: fixed;
+        z-index: -100;
+        @include slide-WH;
+    }
+
+    .small-dev {
+        display: none;
+    }
+
+    .header-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: $section-title-bgc;
+        font-size: 50px;
+        z-index: 1;
+
+        .company-slogan {
+            padding-top: 10px;
+            padding-left: 50px;
+        }
+    }
+}

@@ -10,8 +10,7 @@
             margin-bottom: 70px;
 
             img {
-                width: 100%;
-                height: 100%;
+                @include slide-WH;
             }
         }
 
@@ -19,15 +18,12 @@
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
+            @include slide-WH;
             background-color: rgba(119, 136, 153, 0.6);
 
             img {
                 position: fixed;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                @include centre;
                 width: 70%;
                 height: 70%;
             }
@@ -82,7 +78,7 @@
     }
 
     .gallery-container.overflow {
-        background-color: lightslategray;
+        background-color: $column-text-color;
         z-index: 10;
     }
 

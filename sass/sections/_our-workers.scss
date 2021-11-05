@@ -12,8 +12,7 @@
             border-radius: 15px;
 
             img {
-                width: 100%;
-                height: 100%;
+                @include slide-WH;
             }
 
             .text-container {
@@ -21,11 +20,10 @@
                 top: -35%;
                 left: -35%;
                 transform: translate(-50%, -50%);
-                background-color: rgba(119, 136, 153, 0.5);
+                background-color: rgba(119, 136, 153, 0.7);
                 border-radius: 15px;
                 color: transparent;
-                width: 100%;
-                height: 100%;
+                @include slide-WH;
                 text-align: center;
                 transition: 1s;
 

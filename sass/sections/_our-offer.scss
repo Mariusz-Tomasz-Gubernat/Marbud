@@ -9,44 +9,34 @@
         margin: 50px 15px;
         border-radius: 30px;
         padding: 50px;
-        color: rgb(119, 136, 153);
+        color: $column-text-color;
 
         img {
             width: 40%;
-            border: 15px solid rgb(235, 235, 235);
-            box-shadow: 0 0 1em rgb(235, 235, 235);
+            border: 15px solid $column-bgc;
+            box-shadow: 0 0 1em $column-bgc;
             border-radius: 30%;
             transition: 1s;
         }
 
         .text-container {
-            position: relative;
+            padding: 40px;
             width: 40%;
-            height: 550px;
+            height: fit-content;
+            background-color: $column-bgc;
+            text-align: center;
             border-radius: 40% 30px;
-            background-color: rgb(235, 235, 235);
-
-            .main-text-container {
-                width: 80%;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
 
             .about-us-column-title {
-                padding: 0 15px 15px 15px;
-                margin: 0 20px 20px 20px;
-                font-size: 30px;
-                text-align: center;
+                padding: 40px;
+                font-size: 25px;
                 color: rgb(80, 100, 100);
             }
 
             .about-us-content {
-                margin: auto;
-                padding: 20px 20px 20px 40px;
                 font-size: 18px;
                 line-height: 28px;
+                padding: 20px 40px 60px;
             }
         }
     }

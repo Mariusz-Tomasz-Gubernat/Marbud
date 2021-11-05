@@ -10,7 +10,7 @@
             flex-direction: column;
             flex-wrap: wrap;
             align-content: space-around;
-            background-color: rgb(11, 30, 64);
+            background-color: $contact-background;
             border-radius: 50px;
 
             input,
@@ -19,7 +19,7 @@
                 padding: 10px;
                 background-color: rgb(43, 76, 132);
                 border: none;
-                color: whitesmoke;
+                color: $section-title-bgc;
                 outline: none;
                 font-size: 16px;
 
@@ -27,7 +27,7 @@
             }
 
             ::placeholder {
-                color: whitesmoke;
+                color: $section-title-bgc;
                 font-size: 16px;
             }
 
@@ -44,7 +44,7 @@ textarea::-webkit-scrollbar {
 }
 
 textarea::-webkit-scrollbar-thumb {
-    background-color: rgb(11, 30, 64);
+    background-color: $contact-background;
     outline: 2px solid rgba(65, 105, 225, 0.5);
     border-radius: 50px;
 }

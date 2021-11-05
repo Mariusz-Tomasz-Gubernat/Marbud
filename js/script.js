@@ -2,7 +2,27 @@ const slides = document.querySelectorAll(".slide"),
     times = document.querySelector(".fa-times"),
     arrowLeft = document.querySelector(".fa-caret-left"),
     arrowRight = document.querySelector(".fa-caret-right"),
-    slideImages = document.querySelectorAll(".slide-image");
+    slideImages = document.querySelectorAll(".slide-image"),
+    mainBars = document.querySelector(".main-bars"),
+    secondBars = document.querySelector(".second-bars"),
+    navigation = document.querySelector(".navigation");
+
+mainBars.addEventListener("click", function () {
+    navigation.classList.add('show-menu');
+    navigation.classList.remove('hide-menu');
+    mainBars.classList.add("bars-to-down");
+    mainBars.classList.remove("bars-to-up");
+    secondBars.classList.add("show-second-bars");
+})
+
+
+secondBars.addEventListener("click", function () {
+    navigation.classList.remove('show-menu');
+    navigation.classList.add('hide-menu');
+    mainBars.classList.remove("bars-to-down");
+    mainBars.classList.add("bars-to-up");
+    secondBars.classList.remove("show-second-bars");
+})
 
 times.addEventListener("click", function () {
     for (const slide of slides) {
